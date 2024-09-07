@@ -1,0 +1,351 @@
+/* General */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+    
+
+}
+
+
+
+/* HEADER SECTION */
+
+.header {
+    background-color: #dbe1e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    position: relative;
+    padding: 10px;
+    
+    
+    
+}
+
+
+.header_open-nav-button {
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 400;    
+    right: 10px;    
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    z-index: 1001;
+    
+
+    
+}
+
+.header_checkbox {
+    display: none;
+
+}
+
+
+.buscador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.buscador input {
+    width: 100%;
+    padding: 2px;
+    font-size: 16px;
+    padding-left: 100px;
+    text-align:justify;
+
+}
+
+.fa-solid .fa-magnifying-glass {
+
+    padding-right: 10px;
+}
+
+
+.header-datos {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    margin-right: 60px;
+    
+}
+
+
+
+.header_nav {
+    display: none;
+    background-color: #dbe1e7;
+    position: absolute;
+    height: 100vh;
+    width: 12vw;
+    top: 0;    
+    z-index: 1000;
+    font-size: 0.9rem;
+    left: 0;
+    
+    
+    
+}
+
+.header_nav-list {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    margin: auto;
+    justify-content: space-evenly;   
+    margin-top: 10px;
+    margin-left: 10px;
+    
+
+}
+
+nav h2 {
+    margin-top: 60px;
+    color: black;
+}
+.header_sub-list {
+    margin-left: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.header_sub-list:hover {
+    text-decoration: none;
+    color: black;
+    font-size: 1.0rem;
+
+}
+
+
+.header_checkbox:checked ~ .header_nav {
+    display: flex;
+    
+}
+    
+
+
+.header_nav-item {
+    list-style:none;
+    margin-top: 20px;
+}
+
+.header_nav-item a {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.header_nav-item p {
+    font-size: 18px;
+}
+
+/* HEADER ENDS */
+
+
+/* SECTION */
+
+
+
+.venta {
+    /* background-color: #8ea4db; */
+    color: rgb(235, 228, 214);    
+    min-height: 100vh;
+    min-width: 56.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    
+}
+
+.venta_title {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.venta_project-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: auto;    
+    gap: 12px;    
+    row-gap: 50px;    
+    padding: 12px;
+    min-height: 110vh;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+}
+
+/* venta */
+
+.venta_project {
+    background-image:  url("../img/Ropa-hombre/pantalon.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: end center;
+}
+
+.venta_project:hover {
+    opacity: 0.74;
+    outline: 2px solid rgba(37, 14, 14, 0.6);
+}
+
+
+.venta_project h2, p {
+
+    padding: 0;
+    margin-bottom: 5px;
+    
+}
+
+.compra {
+    border-color: black;
+    border-width: 10px;
+    background-color: #1865c4;
+    width: 200px;
+    height: 40px;
+    text-align:center;
+    padding: 10px;    
+
+}
+
+
+/* venta1 */
+
+.venta1_project {
+    background-image:  url("../img/Ropa-hombre/chaqueta.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: end center;
+}
+
+.venta1_project:hover {
+    opacity: 0.74;
+    outline: 2px solid rgba(37, 14, 14, 0.6);
+}
+
+
+.venta1_project h2, p {
+
+    padding: 0;
+    margin-bottom: 5px;
+    
+}
+
+/* venta2 */
+
+.venta2_project {
+    background-image: url("../img/Ropa-hombre/camisa.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: end center;
+}
+
+.venta2_project:hover {
+    opacity: 0.74;
+    outline: 2px solid rgba(37, 14, 14, 0.6);
+}
+
+
+.venta2_project h2, p {
+
+    padding: 0;
+    margin-bottom: 5px;
+    
+    
+}
+
+/* venta3 */
+
+.venta3_project {
+    background-image: url("../img/perfume-hombre/acquadigio.png");
+    background-position: right;
+    background-size: cover;
+    display: grid;
+    place-content: end center;
+}
+
+.venta3_project:hover {
+    opacity: 0.74;
+    outline: 2px solid rgba(37, 14, 14, 0.6);
+}
+
+
+.venta3_project h2, p {
+
+    padding: 0;
+    margin-bottom: 5px;
+    
+}
+
+/* venta4 */
+
+.venta4_project {
+    background-image: url("../img/perfume-hombre/sauvage.png");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-content: end center;
+}
+
+.venta4_project:hover {
+    opacity: 0.74;
+    outline: 2px solid rgba(37, 14, 14, 0.6);
+}
+
+
+.venta4_project h2, p {
+
+    padding: 0;
+    margin-bottom: 5px;
+    
+}
+
+/* venta5 */
+
+.venta5_project {
+    background-image: url("../img/zapatos-hombre/zapatilla.png");
+    background-position: bottom;
+    background-size: cover;
+    display: grid;
+    place-content: end center;
+}
+
+.venta5_project:hover {
+    opacity: 0.74;
+    outline: 2px solid rgba(37, 14, 14, 0.6);
+}
+
+
+.venta5_project h2, p {
+
+    padding: 0;
+    margin-bottom: 5px;
+    
+}
+
+
+/* SECTION FIN */
+
+
+/* footer */
+
+.derechos-de-autor {    
+    text-align: center;
+}
+
+/* fin footer */
